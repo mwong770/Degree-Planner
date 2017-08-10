@@ -58,7 +58,7 @@ A Node.js and MySQL degree planner that lets students organize courses by semest
 ![screenshot of connection file](/screenshots/connection.png)
 
 * Enter your MySQL password, if you have one.
-To create the database and tables and then populate the tables, you can run the .sql files in the terminal by going to the Degree Planner folder and typing mysql -uroot -p < schema.sql and mysql -uroot -p < seeds.sql, or you can run schema.sql and seeds.sql in MySQL Workbench.
+* To create the database and tables and then populate the tables, you can run the .sql files in the terminal by going to the Degree Planner folder and typing `mysql -uroot -p < schema.sql` and `mysql -uroot -p < seeds.sql`, or you can run schema.sql and seeds.sql in MySQL Workbench.
 
 ![screenshot of MySQL database creation](/screenshots/mysql.png)
 
