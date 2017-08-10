@@ -2,8 +2,8 @@
 		<div class="row" id="heading">
 			<div class="col-xs-12 text-center">
 				<header>
-					<h1>Degree Planner</h1>
-					<h3>Enter your courses, then click registered or completed as you take courses.</h3>
+					<h1> Degree Planner </h1>
+					<h3> Enter your courses, then click registered or completed as you take courses. </h3>
 				</header>
 			</div>
 			<div class="col-xs-12 text-center">
@@ -14,7 +14,7 @@
 							<input type="textbox" id="courseSemester" name="semester" placeholder="Ex. Spring">
 							<input type="textbox" id="courseYear" name="year" placeholder="Ex. 2018">
 						</div>
-						<button class="btn btn-lg" id="addCourse" type="submit">Add Course</button>
+						<button class="btn btn-lg" id="addCourse" type="submit"> Add Course </button>
 					</form>
 				</div>
 			</div>
@@ -24,7 +24,7 @@
 				<div id="plannedDiv">
 					<div class="category categoryPlanned">
 						<img class="clipboardPic" src="assets/img/clipboard-yellow.png">
-						<span >Planned</span>
+						<span> Planned </span>
 					</div>
 					{{#each courses}}
 						{{#if this.planned}}
@@ -33,7 +33,7 @@
 									<div class="col-sm-12" id="courseLabelDiv">
 										<div class="row classRow courseInfo">
 											<div class="col-sm-12">
-												<p class="courseName plannedCourseName">{{this.course_name}}</p>
+												<p class="courseName plannedCourseName"> {{this.course_name}} </p>
 											</div>
 										</div>
 										<div class="row classRow">
@@ -44,14 +44,14 @@
 														<input type="hidden" name="current" value="1">
 														<input type="hidden" name="planned" value="0">
 														<input type="hidden" name="id" value="{{this.id}}">
-														<button type="submit" class="registeredButton plannedButton btn">Registered</button>
+														<button type="submit" class="registeredButton plannedButton btn"> Registered </button>
 												</form>
 											</div>
 											<div class="col-sm-6">
 												<form action="/delete?_method=DELETE" method="POST">
 													<input type="hidden" name="completed" value="0">
 														<input type="hidden" name="id" value="{{this.id}}">
-														<button type="submit" class="deleteButton plannedDeleteButton plannedButton btn">Delete</button>
+														<button type="submit" class="deleteButton plannedDeleteButton plannedButton btn"> Delete </button>
 												</form>
 											</div>
 										</div>
@@ -66,7 +66,7 @@
 				<div id="currentDiv">
 					<div class="category categoryCurrent">
 						<img class="certificatePic" src="assets/img/blue-book.png">
-						<span>Registered</span>
+						<span> Registered </span>
 					</div>
 					{{#each courses}}
 						{{#if this.current}}
@@ -75,7 +75,7 @@
 									<div class="col-sm-12" id="courseLabelDiv">
 										<div class="row classRow courseInfo">
 											<div class="col-sm-12">
-												<p class="courseName currentCourseName">{{this.course_name}}</p>
+												<p class="courseName currentCourseName"> {{this.course_name}} </p>
 											</div>
 										</div>
 										<div class="row" class="classRow">
@@ -85,14 +85,14 @@
 													<input type="hidden" name="current" value="0">
 													<input type="hidden" name="planned" value="0">
 													<input type="hidden" name="id" value="{{this.id}}">
-													<button type="submit" class="completedButton currentButton btn">Completed!</button>
+													<button type="submit" class="completedButton currentButton btn"> Completed! </button>
 												</form>
 											</div>
 											<div class="col-sm-6">
 												<form action="/delete?_method=DELETE" method="POST">
 													<input type="hidden" name="completed" value="0">
 														<input type="hidden" name="id" value="{{this.id}}">
-														<button type="submit" class="deleteButton currentDeleteButton currentButton btn">Delete</button>
+														<button type="submit" class="deleteButton currentDeleteButton currentButton btn"> Delete </button>
 												</form>
 											</div>
 										</div>
@@ -107,7 +107,7 @@
 				<div id="completedDiv">
 					<div class="category categoryCompleted">
 						<img class="certificatePic" src="assets/img/certificate-blue.png">
-						<span>Completed</span>
+						<span> Completed </span>
 					</div>
 					{{#each courses}}
 						{{#if this.completed}}
@@ -116,7 +116,7 @@
 									<div class="col-sm-12" id="courseLabelDiv">
 										<div class="row classRow courseInfo">
 											<div class="col-sm-12">
-												<p class="courseName completedCourseName">{{this.course_name}}</p>
+												<p class="courseName completedCourseName"> {{this.course_name}} </p>
 											</div>
 										</div>
 										<div class="row" class="classRow">
@@ -124,7 +124,7 @@
 												<form action="/delete?_method=DELETE" method="POST">
 													<input type="hidden" name="completed" value="0">
 														<input type="hidden" name="id" value="{{this.id}}">
-														<button type="submit" class="deleteButton completedDeleteButton btn">Delete</button>
+														<button type="submit" class="deleteButton completedDeleteButton btn"> Delete </button>
 												</form>
 											</div>
 										</div>

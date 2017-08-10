@@ -1,13 +1,3 @@
-//Potential Improvements:
-//////Semesters
-//////grade after pop up form when click completed
-//////credit hours
-//////multiple degree plans
-//////multiple students-?
-//nicer index page
-//move buttons closer together
-//percent completed bar, possibly with numerical percent
-
 
 var express = require("express");
 var bodyParser = require("body-parser");
