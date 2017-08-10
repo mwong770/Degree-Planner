@@ -1,8 +1,8 @@
 
-//sets up MySQL connection.
+// sets up MySQL connection
 var mysql = require("mysql");
 
-//checks if connection using JawsDB or local mysql db
+// checks if connection using JawsDB or local MySQL db
 if(process.env.JAWSDB_URL) {
     var connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
@@ -24,3 +24,5 @@ connection.connect(function(err) {
 });
 
 module.exports = connection;
+
+

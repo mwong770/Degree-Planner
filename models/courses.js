@@ -1,4 +1,4 @@
-//imports ORM 
+// imports ORM 
 var orm = require("../config/orm.js");
 
 var courses = {
