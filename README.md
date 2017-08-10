@@ -71,9 +71,8 @@ A Node.js and MySQL degree planner that lets students organize courses by semest
 
 ## <a name="features"></a> :boom: Features
 
-* Users can enter course information -- course name, semester took/will take, year took/will take, whether planning on taking the course, currently registered for the course, or completed the course (optional - defaults to planned)
-* Course information entered is displayed under Planned, Registered, or Completed categories
-* Courses under each category are displayed in ascending order by semester/year 
+* Users can enter course information -- course name, semester taken/will take and the year taken/will take
+* Course information is displayed under Planned, Registered, or Completed categories
 * Users can delete courses
 * Users can move courses from Planned to Registered by clicking the 'Registered' button
 * Users can move courses from Registered to Completed by clicking the 'Completed' button
